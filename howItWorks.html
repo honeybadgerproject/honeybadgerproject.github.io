@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>How it works</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Add custom CSS here -->
+    <link href="css/blog-post.css" rel="stylesheet">
+	
+	 <!-- Custom styles for this template -->
+    <link href="css/blog.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-8 blog-main">
+
+                <!-- the actual blog post: title/author/date/content -->
+				
+				<a href="index.html"><- Return Home</a>
+               
+				<div class="blog-post">
+					<h2 class="blog-post-title">How it works</h2>
+					<hr>
+					<h2 class="h2">Intro</h2>
+					<p>This frameworks is based on a MVC pattern, and help you to map your view calls into a xml file config for both directions. You need to create your badger-config.xml, this is the first step to map your html views and the java methods code without the needy to use a Server between this technologies.</p>
+					<p>To use this functionality you need to add in your code the next lines into the onCreate method of all the activities you want to use this.</a>
+					<img src="img/callHB.jpg" class="img-responsive"></img>
+					<br>
+					
+					<h2 class="h2">Creating your badger-config.xml</h2>
+					<p>This file is created to set a behavior into the web views.</p>
+					<p>Please check the basic config for this; first you need to create into your project->assets, a new xml filewith the name: badger-config.xml</p>
+					<br>
+					
+					<h3 class="h3">badger-config.xml</h3>
+					<p>The basic information for badger-config.xml is this:</p>
+					<pre><code>
+
+&lt;webviews&gt;
+  &lt;view-services&gt;
+    &lt;view-service&gt;
+	  &lt;id-WebView&gt;homeView&lt;/id-WebView&gt;
+	  &lt;class-name>com.honey.jsService.Gen&lt;/class-name&gt;
+	  &lt;html-interface-name&gt;MyView&lt;/html-interface-name&gt;
+	  &lt;url&gt;file:///android_asset/web/home.html&lt;/url&gt;  
+	  &lt;map&gt;&lt;/map&gt;
+	 &lt;/view-service&gt;
+  &lt;/view-services&gt;
+&lt;/webviews>
+
+					</code></pre>
+					<br>
+					
+					<h2 class="h2">Creating your html views structure</h2>
+					<p>Create your folder web into assets folder, and start coding your html here. This is a basic example on html:</p>
+					<img src="img/htmlHome.jpg" class="img-responsive"></img>
+					<hr>
+					<img src="img/cssHome.jpg" class="img-responsive"></img>
+					<br>
+					
+					<h2 class="h2">Create your Java Class</h2>
+					<p>Set the method in java.</p>
+					<img src="img/gen.jpg" class="img-responsive"></img>
+					<br>
+		
+				</div>
+                
+				                              
+            </div>
+
+            <div class="col-lg-4">
+                <!-- /well -->
+                <div class="well">
+                    <h4>Categories</h4>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <ul class="list-unstyled">
+                                <li><a href="download.html"><h4>1. Download and add Jar</h4></a>
+                                </li>
+                                <li class="active"><a href="howItWorks.html" class="active"><h4>2. How it works</h4></a>
+                                </li>
+                                <li><a href="docs.html"><h4>3. Docs</h4></a>
+                                </li>
+                                <li><a href="example.html"><h4>4. Download Examples</h4></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- /well -->
+               
+            </div>
+        </div>
+
+        <hr>
+
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Company 2013</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- JavaScript -->
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+</body>
+
+</html>
