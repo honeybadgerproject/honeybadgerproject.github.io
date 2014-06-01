@@ -35,8 +35,11 @@
 				<div class="blog-post">
 					<h2 class="blog-post-title">How it works</h2>
 					<hr>
+					<h2 class="h2">Speed Intro</h2>
+					<p>The purpose is to give a context to a WebView linked with an Activity and have events communication between them.</p>
+					
 					<h2 class="h2">Intro</h2>
-					<p>This frameworks is based on a MVC pattern, and help you to map your view calls into a xml file config for both directions. You need to create your badger-config.xml, this is the first step to map your html views and the java methods code without the needy to use a Server between this technologies.</p>
+					<p>This jar is based on a MVC pattern, and help you to map your view calls into a xml file config for both directions. You need to create your badger-config.xml, this is the first step to map your html views and the java methods code without the needy to use a Server between this technologies.</p>
 					<p>To use this functionality you need to add in your code the next lines into the onCreate method of all the activities you want to use this.</a>
 					<img src="img/callHB.jpg" class="img-responsive"></img>
 					<br>
@@ -48,6 +51,12 @@
 					
 					<h3 class="h3">badger-config.xml</h3>
 					<p>The basic information for badger-config.xml is this:</p>
+					
+					
+					<p><pre><code>&lt;id-WebView&gt;&lt;</code></pre>---> Web View name in the xml activity</p>
+					<p><pre><code>&lt;class-name&gt;&lt;</code></pre>---> The java activity class package with name</p>
+					<p><pre><code>&lt;html-interface-name&gt;&lt;</code></pre>---> one method identifier for your html code</p>
+					<p><pre><code>&lt;url&gt;&lt;</code></pre>---> Html path and name</p>
 					<pre><code>
 
 &lt;webviews&gt;
@@ -57,8 +66,7 @@
 	  &lt;class-name>com.honey.jsService.Gen&lt;/class-name&gt;
 	  &lt;html-interface-name&gt;MyView&lt;/html-interface-name&gt;
 	  &lt;url&gt;file:///android_asset/web/home.html&lt;/url&gt;  
-	  &lt;map&gt;&lt;/map&gt;
-	 &lt;/view-service&gt;
+    &lt;/view-service&gt;
   &lt;/view-services&gt;
 &lt;/webviews>
 
