@@ -18,6 +18,9 @@
 	 <!-- Custom styles for this template -->
     <link href="css/blog.css" rel="stylesheet">
 
+     <!-- Custom web page style  -->
+     <link href="stylesheets/auxStylesheet.css" rel="stylesheet" type="text/css">
+
 </head>
 
 <body>
@@ -38,9 +41,47 @@
 					<h2 class="h2">Bill Check App</h2>
 					<p>The better explain to use this jar is building an app. For this purpouse you can follow the next steps an create a Bill Check App</p>
 					<p>you can download this example from Download Examples as BillCheckTest</p>
-					
-					
-					<br>
+					<p>The first think it's create the Activities(Views) for the application</p>
+                    <img src="img/Activities.jpg" class="img-responsive">
+                    <p>Create the model for the application</p>
+                    <img src="img/model.jpg" class="img-responsive">
+                    <p>Let's go to create the badger-config.xml</p>
+                    <pre><code>
+
+&lt;webviews&gt;
+  &lt;view-services&gt;
+    &lt;view-service&gt;
+      &lt;id-WebView&gt;billBill&lt;/id-WebView&gt;
+      &lt;class-name&gt;com.test.billchecktest.OneBillActivity&lt;/class-name&gt;
+      &lt;html-interface-name&gt;MyView&lt;/html-interface-name&gt;
+      &lt;url&gt;file:///android_asset/web/OneBill.html&lt;/url&gt;  
+    &lt;/view-service&gt;
+    &lt;view-service&gt;
+      &lt;id-WebView&gt;oneBill&lt;/id-WebView&gt;
+      &lt;class-name&gt;com.test.billchecktest.MainActivity&lt;/class-name&gt;
+      &lt;html-interface-name&gt;MyView&lt;/html-interface-name&gt;
+      &lt;url&gt;file:///android_asset/web/billView.html&lt;/url&gt;  
+    &lt;/view-service&gt;
+  &lt;/view-services&gt;
+&lt;/webviews>
+
+                    </code></pre>
+
+                    <p>Now we going to create the web folder and put here our html, css and js files</p>
+                    <img src="img/webFolder.jpg" class="img-responsive">
+                    <br>
+					<p>
+                        <div class="singleLineImage">
+                            <img src="img/view1.jpg" >
+                            <img src="img/view2.jpg" >
+                            <img src="img/view3.jpg" >
+                        </div>
+                    </p>
+                    <br>
+                    <p>finally we call the Honey Badger to map in each Activity that you want to handle a WebView</p>
+                    <img src="img/callHB.jpg" class="img-responsive"></img>
+
+                    <br>
 		
 				</div>
                 
